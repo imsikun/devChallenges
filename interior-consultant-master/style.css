@@ -9,6 +9,10 @@
 
 body {
   background: #181719;
+  overflow-x: hidden !important;
+}
+html {
+  overflow-x: hidden !important;
 }
 
 /* .container {
@@ -35,6 +39,7 @@ nav .logo h4 {
 }
 nav ul li {
   display: inline;
+  margin-left: 86px;
 }
 nav ul li a {
   color: #fff;
@@ -44,11 +49,25 @@ nav ul li a {
   line-height: 22px;
   text-transform: capitalize;
   text-decoration: none;
-  margin-left: 86px;
 }
 nav ul li .active {
   margin-top: 8px;
   border-bottom: 2px solid #fff;
+}
+
+nav .mobile_icon {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+nav .mobile_nav_icon {
+  height: 28px;
+  width: 20px;
+  color: #fff;
+}
+nav .mobile_nav_icon .cross {
+  display: none;
 }
 
 section {
@@ -182,4 +201,223 @@ footer p a {
 }
 footer p a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 46px 60px;
+  }
+  nav ul li {
+    margin-left: 40px;
+  }
+  section {
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  section .right_section .image {
+    width: 900px;
+    height: 700px;
+  }
+  section .left_section button {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 46px 40px;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  section {
+    padding: 0px 40px;
+  }
+
+  section .right_section .image {
+    width: 670px;
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav .mobile_icon {
+    display: block;
+    z-index: 999;
+    align-items: center;
+  }
+  nav .mobile_icon .menu {
+    margin-top: 17px;
+  }
+  .nav_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #181719;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.4s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .bar .nav_list {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .bar .mobile_icon .mobile_nav_icon .cross {
+    display: block;
+  }
+
+  .bar .mobile_icon .mobile_nav_icon .menu {
+    display: none;
+  }
+  nav ul li {
+    margin: 32px;
+  }
+  nav {
+    padding: 19px 12px;
+  }
+  section {
+    padding: 0px 12px;
+    margin-top: 38px;
+  }
+
+  section .left_section h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  section .left_section p {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  section .left_section button {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  section .right_section .image {
+    width: 390px;
+    height: 300px;
+  }
+  section .right_section .right_sub_section {
+    width: 300px;
+    height: 138px;
+  }
+  section .right_sub_section .profile .profile_author p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  section .right_sub_section .profile .profile_author span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  section .right_sub_section .profile_desc p {
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav .mobile_icon {
+    display: block;
+    z-index: 999;
+    align-items: center;
+  }
+  nav .mobile_icon .menu {
+    margin-top: 17px;
+  }
+  .nav_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #181719;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.4s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .bar .nav_list {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .bar .mobile_icon .mobile_nav_icon .cross {
+    display: block;
+  }
+
+  .bar .mobile_icon .mobile_nav_icon .menu {
+    display: none;
+  }
+  nav ul li {
+    margin: 32px;
+  }
+  nav {
+    padding: 19px 12px;
+  }
+  section {
+    padding: 0px 12px;
+    margin-top: 38px;
+  }
+
+  section .left_section h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  section .left_section p {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  section .left_section button {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  section .right_section .image {
+    width: 330px;
+    height: 200px;
+  }
+  section .right_section .right_sub_section {
+    width: 250px;
+    height: 138px;
+  }
+  section .right_sub_section .profile .profile_author p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  section .right_sub_section .profile .profile_author span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  section .right_sub_section .profile_desc p {
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
