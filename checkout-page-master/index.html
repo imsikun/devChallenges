@@ -26,6 +26,105 @@
     <title>Checkout Form</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="details">
+        <div class="form">
+          <div class="first_form">
+            <h3>Contact information</h3>
+          <form>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" placeholder="Enter your email..." />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="phone" placeholder="Enter you phone..." />
+            </div>
+          </div>
+          <div class="second_form">
+            <h3>Shipping address</h3>
+            <form>
+              <div>
+                <label for="name">Full name</label>
+              <input type="text" placeholder="Rodney Cotton">
+              </div>
+              <div>
+                <label for="address">Address</label>
+                <input type="text" placeholder="Your address">
+              </div>
+              <div>
+                <label for="city">City</label>
+                <input type="text" placeholder="Your city...">
+              </div>
+              <div class="both">
+                <div>
+                  <label for="country">Country</label>
+                  <select name="country">
+                    <option value="country">Your country</option>
+                    <option value="country">India</option>
+                    <option value="country">USA</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="postal_code">Postal code</label>
+                  <input type="text" placeholder="Your postal code">
+                </div>
+              </div>
+             <div>
+                <input type="checkbox"> 
+              <span>Save this information for next time</span>
+             </div>
+              <button class="btn continue">Continue</button>
+            </form>
+          </div>
+          </form>
+        </div>
+        <div class="cart">
+          <div class="item">
+          <div class="first_item">
+            <div class="item_photo">
+              <img src="photo1.png" alt="">
+            </div>
+            <div class="item_details">
+              <p>Vintage Backbag</p>
+              <span class="discounted_price">$54.99</span>
+              <span class="original_price">$94.99</span>
+              <div class="counter">
+                first_icon
+                1
+                second_icon
+              </div>
+            </div>
+          </div>
+               <div class="second_item">
+            <div class="item_photo">
+              <img src="photo2.png" alt="">
+            </div>
+            <div class="item_details">
+              <p>Vintage Backbag</p>
+              <span class="discounted_price">$54.99</span>
+              <span class="original_price">$94.99</span>
+              <div class="counter">
+                first_icon
+                1
+                second_icon
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="bill">
+            <div class="shipping">
+              <p>Shipping</p>
+              <span>$19</span>
+            </div>
+            <div class="total">
+              <p>Total</p>
+              <span>$148.98</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
