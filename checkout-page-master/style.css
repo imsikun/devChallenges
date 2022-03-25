@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 64px 240px;
+}
+.heading h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #4e5150;
+  margin-bottom: 54px;
+}
+.both {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form {
+  width: 496px;
+  margin-right: 112px;
+}
+
+.details .form .first_form h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.input {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  width: 465px;
+  outline: none;
+}
+
+.input:hover {
+  outline: none;
+}
+select {
+  background-color: transparent;
+}
+select,
+.postal {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 12px;
+  width: 217px;
+  height: 56px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  outline: none;
+}
+.both div {
+  margin-right: 31px;
+}
+::placeholder,
+select {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #828282;
+}
+.mm {
+  position: relative;
+}
+.mm input[type='text'],
+select {
+  padding-left: 50px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.mm input[type='phone'] {
+  padding-left: 50px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.mm input[type='email'] {
+  padding-left: 50px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.mm i {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  padding: 14px 20px;
+}
+.second_form h3 {
+  margin-top: 59px;
+  margin-bottom: 15px;
+}
+.save_later {
+  margin-bottom: 23px;
+}
+.save_later input[type='checkbox'] {
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+.save_later span {
+  margin-left: 11px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+  font-weight: 600;
+}
+.btn {
+  float: right;
+  margin-right: 33px;
+  background-color: #f2994a;
+  border-radius: 12px;
+  padding: 17px 45px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  outline: none;
+}
